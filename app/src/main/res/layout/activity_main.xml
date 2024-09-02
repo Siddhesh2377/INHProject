@@ -9,6 +9,7 @@
     tools:context=".MainActivity">
 
     <View
+        android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_below="@id/head_bg"
@@ -72,6 +73,78 @@
         </RelativeLayout>
 
     </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/divider">
+
+        <ImageView
+            android:id="@+id/char1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/sample_char"/>
+
+        <View
+            android:id="@+id/char1_divider"
+            android:layout_width="100dp"
+            android:layout_height="3dp"
+            android:layout_below="@id/char1"
+            android:layout_centerHorizontal="true"
+            android:background="@color/accent"
+            android:elevation="8dp" />
+
+        <TextView
+            android:id="@+id/or_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/char1_divider"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/itim"
+            android:text="@string/or_let_s_go_with_your_choice"
+            android:textColor="@color/accent"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/or_title_divider"
+            android:layout_width="200dp"
+            android:layout_height="3dp"
+            android:layout_below="@id/or_title"
+            android:layout_centerHorizontal="true"
+            android:background="@color/accent" />
+
+        <View
+            android:id="@+id/or_title_divider2"
+            android:layout_width="150dp"
+            android:layout_height="3dp"
+            android:layout_below="@id/or_title_divider"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:background="@color/accent"
+            android:elevation="8dp" />
+
+        <View
+            android:id="@+id/navLine1"
+            android:layout_width="3dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/or_title_divider2"
+            android:layout_centerHorizontal="true"
+            android:background="@color/accent"
+            android:elevation="8dp" />
+
+        <com.team_react.inhproject.CheckIMG
+            android:id="@+id/initCheckPost"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/check"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/navLine1"/>
+
+    </RelativeLayout>
 
 
 </RelativeLayout>
